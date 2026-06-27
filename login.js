@@ -8,13 +8,13 @@ import {
 
 from "./firebase.js";
 
-const btn =
+const googleBtn =
 
 document.getElementById(
     "googleBtn"
 );
 
-btn.onclick =
+googleBtn.onclick =
 async ()=>{
 
     try{
@@ -65,6 +65,8 @@ async ()=>{
             error.message
 
         );
+
+        console.log(error);
 
     }
 
