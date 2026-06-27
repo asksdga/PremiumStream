@@ -1,3 +1,5 @@
+alert("LOGIN JS LOADED");
+
 import {
 
     auth,
@@ -8,66 +10,16 @@ import {
 
 from "./firebase.js";
 
+alert("FIREBASE LOADED");
+
 const googleBtn =
 
 document.getElementById(
     "googleBtn"
 );
 
-googleBtn.onclick =
-async ()=>{
+googleBtn.onclick = ()=>{
 
-    try{
-
-        const result =
-
-        await signInWithPopup(
-
-            auth,
-            provider
-
-        );
-
-        const user =
-        result.user;
-
-        localStorage.setItem(
-
-            "ps_user",
-
-            JSON.stringify({
-
-                uid:
-                user.uid,
-
-                name:
-                user.displayName,
-
-                email:
-                user.email,
-
-                picture:
-                user.photoURL
-
-            })
-
-        );
-
-        location.href =
-        "dashboard.html";
-
-    }
-
-    catch(error){
-
-        alert(
-
-            error.message
-
-        );
-
-        console.log(error);
-
-    }
+    alert("BUTTON CLICK");
 
 };
