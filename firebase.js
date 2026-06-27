@@ -1,18 +1,34 @@
-import { initializeApp }
-from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import {
+
+    initializeApp
+
+}
+
+from
+
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 
 import {
+
     getAuth,
     GoogleAuthProvider,
-    signInWithPopup,
-    signOut
+    signInWithPopup
+
 }
-from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+from
+
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 import {
+
     getDatabase
+
 }
-from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+from
+
+"https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 
 const firebaseConfig = {
 
@@ -39,19 +55,23 @@ const firebaseConfig = {
 
 };
 
-export const app =
+const app =
 initializeApp(firebaseConfig);
 
-export const auth =
+const auth =
 getAuth(app);
 
-export const db =
-getDatabase(app);
-
-export const provider =
+const provider =
 new GoogleAuthProvider();
 
+const db =
+getDatabase(app);
+
 export {
-    signInWithPopup,
-    signOut
+
+    auth,
+    provider,
+    db,
+    signInWithPopup
+
 };
