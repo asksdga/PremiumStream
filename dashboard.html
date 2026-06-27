@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html>
 
+<head>
+
+<title>
+Dashboard
+</title>
+
+</head>
+
+<body>
+
+<h1>
+
+LOGIN SUCCESS
+
+</h1>
+
+<script>
+
+const user =
+
+JSON.parse(
+
+    localStorage.getItem(
+        "ps_user"
+    )
+
+);
+
+if(!user){
+
+    location.href =
+    "index.html";
+
+}
+
+document.body.innerHTML +=
+
+"<p>" +
+
+user.name +
+
+"</p>";
+
+</script>
+
+</body>
+
+</html>
