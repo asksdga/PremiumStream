@@ -1,1 +1,73 @@
+body{
 
+    margin:0;
+
+    height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    linear-gradient(
+        135deg,
+        #050505,
+        #1b1028,
+        #6d5000
+    );
+
+    color:white;
+
+    font-family:monospace;
+
+}
+
+.loginBox{
+
+    width:300px;
+
+    text-align:center;
+
+}
+
+h1{
+
+    color:gold;
+
+    letter-spacing:5px;
+
+}
+
+p{
+
+    color:#aaa;
+
+}
+
+button{
+
+    width:100%;
+
+    height:50px;
+
+    border:1px solid gold;
+
+    background:none;
+
+    color:gold;
+
+    font-family:monospace;
+
+    letter-spacing:2px;
+
+}
+
+button:hover{
+
+    background:gold;
+
+    color:black;
+
+}
